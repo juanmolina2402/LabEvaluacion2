@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textColor="@color/teal_700"
+        android:gravity="center"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/tx_Nombre"/>
+        <EditText
+            android:id="@+id/edt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/ed_Nombre"
+            android:layout_marginTop="01dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="20dp"
+            android:text="@string/tx_Genero"/>
+
+        <RadioGroup
+            android:id="@+id/rdb_group_genero"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="100dp">
+
+            <RadioButton
+                android:id="@+id/rdb_masculino"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/rd_Masculino"
+                android:layout_marginTop="15dp"/>
+            <RadioButton
+                android:id="@+id/rdb_femenino"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/rd_Femenino"
+                android:layout_marginTop="10dp"/>
+            <RadioButton
+                android:id="@+id/rdb_otro"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/rd_Otro"
+                android:layout_marginTop="10dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="@string/tx_Edad"/>
+        <EditText
+            android:id="@+id/edt_edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ed_Edad"
+            android:inputType="number"
+            android:layout_marginTop="01dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="0dp"
+            android:layout_weight="4.2"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Siguiente"
+            android:onClick="Validar"/>
+    </LinearLayout>
+</LinearLayout>

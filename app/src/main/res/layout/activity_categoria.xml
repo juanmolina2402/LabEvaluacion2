@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".CategoriaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Elija una categoría "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdb_carnes"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Carnes"
+                />
+            <RadioButton
+                android:id="@+id/rdb_ensaladas"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Ensaladas"
+                android:layout_marginTop="20dp"/>
+            <RadioButton
+                android:id="@+id/rdb_frutas"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Frutas"
+                android:layout_marginTop="20dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

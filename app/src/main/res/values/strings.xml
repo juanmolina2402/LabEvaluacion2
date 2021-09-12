@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab Evaluacion</string>
+    <string name="btn_AgregarEncuesta">Agregar Encuesta</string>
+    <string name="btn_VerLista">Ver lista</string>
+    <string name="btn_VerDatos">Ver datos</string>
+    <string name="tv_Desarrollado">Desarrollado por</string>
+    <string name="tv_Nombre">Nombre: Juan Carlos Molina Chamel</string>
+    <string name="tv_Codigo">Código: MC17-I04-004</string>
+    <string name="tv_Nombre2">Nombre: Daniel Fernando Cuellar Larín</string>
+    <string name="tv_Codigo2">Código: CL17-I04-002</string>
+    <string name="tx_Nombre">Nombre:</string>
+    <string name="ed_Nombre">Digite el nombre</string>
+    <string name="tx_Genero">Genero:</string>
+    <string name="rd_Masculino">Masculino</string>
+    <string name="rd_Femenino">Femenino</string>
+    <string name="rd_Otro">Otro</string>
+    <string name="tx_Edad">Edad:</string>
+    <string name="ed_Edad">Digite la edad</string>
+    <string name="btn_Siguiente">Siguiente</string>
+</resources>
