@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void listaEncuestados(View view){
-        if(RegistrarActivity.encuestados.isEmpty()) {
+        if(ListaComidaActivity.encuestados.isEmpty()) {
             Toast.makeText(this, "La lista está vacía", Toast.LENGTH_LONG).show();
         }else{
             startActivity(new Intent(MainActivity.this, ListaEncuestadosActivity.class));

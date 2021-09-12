@@ -1,5 +1,7 @@
 package com.example.labevaluacion;
 
+import static com.example.labevaluacion.ListaComidaActivity.encuestados;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,8 +9,11 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.labevaluacion.model.Encuestados;
+
+import java.util.ArrayList;
 
 public class ListaEncuestadosActivity extends AppCompatActivity {
 
@@ -24,10 +29,22 @@ public class ListaEncuestadosActivity extends AppCompatActivity {
         }
 
         lsEncuestados = (ListView)findViewById(R.id.lsv_ListaEncuestados);
+        ArrayList<String> Lst= new ArrayList<String>();
 
-        ArrayAdapter<Encuestados> adapterEncuestados = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, RegistrarActivity.encuestados);
-        lsEncuestados.setAdapter(adapterEncuestados);
-        adapterEncuestados.notifyDataSetChanged();
+        if(lsEncuestados != null){
+
+            for(int i=0;i<encuestados.size();i++)
+            {
+                String a=encuestados.get(i).getNombre()+" / "+encuestados.get(i).getPlato();
+                Lst.add(a);
+            }
+
+            ArrayAdapter<Encuestados> adapterEncuestados = new ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, Lst);
+            lsEncuestados.setAdapter(adapterEncuestados);
+            adapterEncuestados.notifyDataSetChanged();
+        }else{
+            Toast.makeText(this, "La lista está vacía", Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override

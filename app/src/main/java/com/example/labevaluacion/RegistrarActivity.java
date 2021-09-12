@@ -23,8 +23,6 @@ public class RegistrarActivity extends AppCompatActivity {
     private Button bt_Siguiente;
     private RadioGroup rd_grupo_genero;
 
-    public static ArrayList<Encuestados> encuestados;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,9 +40,7 @@ public class RegistrarActivity extends AppCompatActivity {
         bt_Siguiente = (Button) findViewById(R.id.btn_siguiente);
         rd_grupo_genero = (RadioGroup) findViewById(R.id.rdb_group_genero);
 
-        if(encuestados == null){
-            encuestados = new ArrayList<>();
-        }
+
         //encuestados = new ArrayList<>();
     }
     public void Validar(View view){
@@ -53,8 +49,9 @@ public class RegistrarActivity extends AppCompatActivity {
                 Toast.makeText(RegistrarActivity.this, "Por favor llene todos los campos", Toast.LENGTH_LONG).show();
 
             } else {
-                encuestados.add(new Encuestados(ed_Nombre.getText().toString()));
-                startActivity(new Intent(RegistrarActivity.this, CategoriaActivity.class));
+                Intent i= new Intent(this, CategoriaActivity.class);
+                i.putExtra("Nombre", ed_Nombre.getText().toString());
+                startActivity(i);
 
             }
         }catch (IllegalArgumentException ex){

@@ -10,12 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabEvaluacion">
         <activity
+            android:label="Lista de Encuestados"
             android:name=".ListaEncuestadosActivity"
             android:exported="true" />
         <activity
+            android:label="Lista de Comidas"
             android:name=".ListaComidaActivity"
             android:exported="true" />
         <activity
+            android:label="Categorías"
             android:name=".CategoriaActivity"
             android:exported="true" />
         <activity
@@ -29,12 +32,15 @@
             </intent-filter>
         </activity>
         <activity
+            android:label="Datos personales"
             android:name=".RegistrarActivity"
             android:exported="true" />
         <activity
+            android:label="Desarrolladores"
             android:name=".DatosActivity"
             android:exported="true" />
         <activity
+            android:label="Menú principal"
             android:name=".MainActivity"
             android:exported="true" />
     </application>
