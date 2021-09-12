@@ -2,8 +2,11 @@ package com.example.labevaluacion;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 public class CategoriaActivity extends AppCompatActivity {
 
@@ -15,6 +18,9 @@ public class CategoriaActivity extends AppCompatActivity {
         if(getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+    }
+    public void Siguiente(View view){
+        startActivity(new Intent(CategoriaActivity.this, ListaComidaActivity.class));
     }
 
     @Override

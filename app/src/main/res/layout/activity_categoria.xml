@@ -47,4 +47,33 @@
         </RadioGroup>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btn_siguiente"
+            android:layout_width="0dp"
+            android:layout_weight="4.2"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Siguiente"
+            android:onClick="Siguiente"/>
+    </LinearLayout>
+
 </LinearLayout>
